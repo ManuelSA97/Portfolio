@@ -1,0 +1,26 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.header{
+    padding: 5rem ;
+    background-image: linear-gradient( rgba(0 0 0 / .7), rgba(0 0 0 / .7)), url(/build/img/deathstar.avif); 
+    color: white;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.header__contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.header__heading{
+    font-size: 8rem;
+    text-align: center;
+}
+
+.header__texto{
+    text-align: center;
+}

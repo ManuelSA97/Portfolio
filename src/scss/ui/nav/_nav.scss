@@ -1,0 +1,86 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+@media (max-width: 480px){
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+        background-color: v.$primario;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+}
+
+
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__link{
+    color: v.$gris;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.nav__link::after{
+    content: '';
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: v.$gris;
+    transition: width .3s ease 0s, left .3s ease 0s;
+    width: 0;
+}
+
+.nav__link:hover:after{
+    width: 100%;
+    left: 0;
+}
+.nav-open-icon,
+.nav-close-icon{
+    display: block;
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem;
+    background-color: transparent;
+    color: v.$gris;
+    font-size: 3rem;
+}
+
+.nav-open-icon{
+    position: absolute;
+    right: 4%;
+    top: 2.82%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@include m.telefono { 
+
+    .navbar{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .nav-open-icon,
+    .nav-close-icon{
+        display: none;
+    }
+
+}
