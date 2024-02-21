@@ -1,0 +1,82 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.aboutme{
+    background-color: v.$primario;
+    color: white;
+    font-family: v.$fuentePrincipal;
+    padding: 1rem 3rem;
+}
+
+.aboutme__grid{
+    display: grid;
+    align-items: center;
+}
+
+
+@include m.tablet { 
+    .aboutme__grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+}
+
+.aboutme__logo{
+    display: none;
+}
+
+@include m.tablet { 
+    .aboutme__logo{
+        display: block;
+        font-size: 15rem;
+        margin: 0 auto;
+    } 
+}
+
+.aboutme__cv{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.aboutme__cv-link{
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: 1px solid v.$secundario;
+    background-color: v.$primario;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    
+}
+
+.aboutme__cv-link::before{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: white;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+}
+
+.aboutme__cv-link:hover{
+    cursor: pointer;
+    color: v.$primario;
+}
+
+.aboutme__cv-link:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
