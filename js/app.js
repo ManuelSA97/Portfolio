@@ -1,4 +1,5 @@
 
+
 // Abrir y cerrar menu "hamburguesa"
 const nav = document.querySelector('#nav');
 const abrir = document.querySelector('#open-icon');
@@ -38,7 +39,7 @@ window.addEventListener('scroll', () => {
 // Pegar menu de nav en otras secciones
 
 
-const ssMoveHeader = function () {
+const stickyHeader = function () {
 
     const hdr = document.querySelector('.nav__contenedor');
     const hero = document.querySelector('#hcontenido');
@@ -78,16 +79,37 @@ const ssMoveHeader = function () {
 // Final sticky nav
 //----------------------------------------------------------
 
+// Smoothscroll
+const smoothScroll = function(){
+    document.addEventListener('DOMContentLoaded', function() {
+        // Selecciona todos los enlaces de la barra de navegación
+        const links = document.querySelectorAll('.nav__link');
+    
+        // Añade un evento de clic a cada enlace
+        links.forEach(link => {
+        link.addEventListener('click', smoothScroll);
+        });
+    
+        // Función para desplazamiento suave
+        function smoothScroll(event) {
+        event.preventDefault();
+    
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+    
+        window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+        });
+        }
+    });
+};
+
+// Fin smoothscroll
+//--------------------------------------------------------------------------------
+  
 
 
-
-
-
-
-
-
-
-
-
-ssMoveHeader();
+stickyHeader();
+smoothScroll();
 

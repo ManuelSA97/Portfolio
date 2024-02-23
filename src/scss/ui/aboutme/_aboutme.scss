@@ -7,6 +7,7 @@
     font-family: v.$fuentePrincipal;
     padding: 1rem 3rem;
     text-align: center;
+    padding: 5rem 0;
 }
 
 @include m.tablet { 
@@ -68,11 +69,11 @@
     position: relative;
     font-size: inherit;
     font-family: inherit;
-    color: white;
+    color: v.$primario;
     padding: 0.5em 1em;
     outline: none;
-    border: 1px solid v.$secundario;
-    background-color: v.$primario;
+    border: 1px solid v.$primario;
+    background-color: white;
     overflow: hidden;
     transition: color 0.4s ease-in-out;
 }
@@ -86,7 +87,7 @@
     width: 1em;
     height: 1em;
     border-radius: 50%;
-    background-color: white;
+    background-color: v.$primario;
     transform-origin: center;
     transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
     transition: transform 0.45s ease-in-out;
@@ -94,7 +95,7 @@
 
 .aboutme__cv-link:hover{
     cursor: pointer;
-    color: v.$primario;
+    color: white;
 }
 
 .aboutme__cv-link:hover::before {

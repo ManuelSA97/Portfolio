@@ -41,7 +41,7 @@ function versionAvif() {
     const opciones = {
         quality: 50
     }
-    return src('src/img/**/*.{png,jpg}')
+    return src('src/img/**/*.{png,jpg,PNG}')
         .pipe( avif( opciones ) )
         .pipe( dest('build/img'))
 }
