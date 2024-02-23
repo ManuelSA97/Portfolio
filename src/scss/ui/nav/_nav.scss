@@ -7,16 +7,17 @@
         opacity: 0;
         visibility: hidden;
         position: absolute;
+        background-color: rgba(0, 0, 0, .9);
         top: 0;
         right: 0;
         bottom: 0;
-        padding: 2rem;
-        background-color: v.$primario;
+        padding: 0 2rem;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        gap: 1rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .7);
+        gap: 5rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .9);
+        font-size: 2.8rem;
     }
 }
 
@@ -55,22 +56,24 @@
     border: none;
     border-radius: 1rem;
     padding: .5rem;
-    background-color: transparent;
-    color: v.$secundario;
-    font-size: 3rem;
+    background-color: rgba(0, 0, 0, .2) ;
+    color: v.$gris;
+    font-size: 4.5rem;
+    margin-top: 1rem;
 
 }
 
 .nav-open-icon{
     position: absolute;
-    right: 4%;
-    top: 2.82%;
+    right: 0;
+    top: 0;
 }
 
 .navbar{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: 5rem;
 }
 
 @include m.telefono { 
@@ -79,11 +82,74 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        gap: 2rem;
     }
     .nav-open-icon,
     .nav-close-icon{
         display: none;
 
     }
+
+}
+
+.nav-sociales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 2rem;
+
+}
+
+.nav-sociales__icon{
+    font-size: 4rem;
+    color: white;
+    transition-property: transform;
+    transition-duration: .3s;
+}
+
+.nav-sociales__icon:hover{
+    transform: scale(1.1);
+    color: darken(white, 30%);
+
+}
+
+.nav__contenedor{
+    width: 100%;
+}
+
+@include m.tablet { 
+    .nav__contenedor{
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
+.nav__contenedor.offset {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    
+}
+
+.nav__contenedor.scrolling {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.nav__contenedor.sticky {
+    opacity: 0;
+    visibility: hidden;
+    background-color: v.$primario;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    
+}
+
+.nav__contenedor.sticky.scrolling {
+    opacity: 1;
+    visibility: visible;
 
 }

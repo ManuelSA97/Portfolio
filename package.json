@@ -25,5 +25,8 @@
   "browserslist": [
     "last 1 version",
     "> 1%"
-  ]
+  ],
+  "dependencies": {
+    "rellax": "^1.12.1"
+  }
 }

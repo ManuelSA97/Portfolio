@@ -8,41 +8,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
     <header class="header">
-        <button id="open-icon" class="nav-open-icon">
-            <!-- <img src="/build/img/icons/ham-menu-icon.svg" alt="menu icon"> -->
-            <i class="bi bi-list"></i>
-        </button>
-        <div class="nav" id="nav">
-            <button id="close-icon" class="nav-close-icon">
-                <!-- <img src="/build/img/icons/close-icon.svg" alt="close icon"> -->
-                <i class="bi bi-x-lg"></i>
+        <div class="header__imagen"></div>
+        <div class="nav__contenedor">
+            <button id="open-icon" class="nav-open-icon">
+                <!-- <img src="/build/img/icons/ham-menu-icon.svg" alt="menu icon"> -->
+                <i class="bi bi-list"></i>
             </button>
-            <nav class="navbar">
-                <a href="#" class="nav__link">Inicio</a>
-                <a href="#" class="nav__link">Sobre mi</a>
-                <a href="#" class="nav__link">Educación</a>
-                <a href="#" class="nav__link">Portfolio</a>
-                <a href="#" class="nav__link">Contacto</a>
-            </nav>
+            <div class="nav" id="nav">
+                <button id="close-icon" class="nav-close-icon">
+                    <!-- <img src="/build/img/icons/close-icon.svg" alt="close icon"> -->
+                    <i class="bi bi-x-lg"></i>
+                </button>
+                <nav class="navbar">
+                    <a href="#" class="nav__link">Inicio</a>
+                    <a href="#" class="nav__link">Sobre mi</a>
+                    <a href="#" class="nav__link">Educación</a>
+                    <a href="#" class="nav__link">Portfolio</a>
+                    <a href="#" class="nav__link">Contacto</a>
+                </nav>
+            </div>
         </div>
 
-        <div class="header__contenido header__contenedor">
-            <h1 class="header__heading">Mi nombre es Manuel Sandí</h1>
-            <p class="header__texto">Soy un Ingeniero en Sistemas de Información, motivado y entusiasta del aprendizaje, que busca expandir su experiencia y conocimientos en el desarrollo web.</p>
-        </div>
+        <div id="hcontenido" class="header__contenido">
+            <div class="header__contenido header__contenedor">
+                <h1 class="header__heading">Mi nombre es Manuel Sandí</h1>
+                <p class="header__texto">Soy un Ingeniero en Sistemas de Información, motivado y que busca expandir su experiencia y conocimientos en el desarrollo web dando lo mejor de si mismo en el proceso.</p>
+            </div>
 
-        <div class="nav-sociales">
-            <a class="nav-sociales__icon" href="#">
-                <img src="/build/img/icons/github-icon.svg" alt="github icon">
-            </a>
-            <a class="nav-sociales__icon" href="#">
-                <img src="/build/img/icons/linkedin-icon.svg" alt="linkedin icon">
-            </a>
+            <div class="nav-sociales">
+                <a class="nav-sociales__icon" href="https://www.linkedin.com/in/manuelsa97/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="nav-sociales__icon" href="https://github.com/ManuelSA97">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -51,19 +57,100 @@
             <div class="aboutme__logo"><i class="bi bi-braces"></i></div>
             <div class="aboutme__contenido">
                 <h2 class="aboutme__heading">
-                    Sobre  mi
+                    Sobre  mi<i class="bi bi-braces aboutme__heading-logo"></i>
                 </h2>
-                <p class="aboutme__texto">Soy un entusiasta del aprendizaje, constantemente inmerso en la exploración de nuevas tecnologías, métodos, librerías y herramientas que podrían ser implementadas en futuros proyectos.
+                <p class="aboutme__texto">Soy autodicacta, un entusiasta del aprendizaje, constantemente inmerso en la exploración de nuevas tecnologías, métodos, librerías y herramientas que podrían ser implementadas en futuros proyectos.
                 </p>
-                <p class="aboutme__texto">Con la aspiración de convertirme en un desarrollador Full-Stack, actualmente me enfoco en perfeccionar mis habilidades en el área del <span class="bold">Front-End</span>. Aplico meticulosamente la filosofía 'Pixel-Perfect' a la hora de dar vida a los diseños, además de adherirme a las mejores prácticas de programación, ya que mi objetivo es producir código legible, reutilizable y fácil de mantener, siguiendo estándares que garanticen la calidad y la eficiencia en el desarrollo de software.
-                </p>
+                <p class="aboutme__texto">Persigo activamente mi meta de convertirme en un desarrollador Full-Stack, aunque mi enfoque actual reside en perfeccionar mis habilidades en el ámbito del <span class="bold">Front-End</span>. En este sentido, me encuentro inmerso en la obtención de un certificado en ReactJS, demostrando mi compromiso con la excelencia en el desarrollo de interfaces dinámicas y funcionales.</p>
+                <p class="aboutme__texto">Aplico con meticulosidad la filosofía 'Pixel-Perfect' al implementar diseños, garantizando una ejecución precisa y estéticamente pulida. Además, me apego rigurosamente a las mejores prácticas de programación. Mi objetivo es la creación de código legible, reutilizable y fácil de mantener, en consonancia con estándares que aseguran la calidad y la eficiencia en el desarrollo de software.</p>
             </div>
         </div>
 
         <div class="aboutme__cv contenedor">
             <a class="aboutme__cv-link" href="/build/Curriculum IT - En.pdf" download="Curriculum IT - En.pdf">Descargar CV <i class="bi bi-download"></i></a>
         </div>
+    </section>
 
+    <section class="educacion seccion">
+        <div class="educacion__contenido">
+            <div class="educacion__contenido-titulo">
+                <h3>Experiencia</h3>
+            </div>
+            <div class="educacion__contenido-texto">
+                <h3 class="educacion__heading">Foundever</h3>
+                <p class="educacion__descripcion" >Costumer Service Representative <span class="fecha"> • Diciembre 2022 - Diciembre 2023</span></p>
+                <p class="educacion__descripcion" >Crear registros de casos relacionados con brindar soporte a la aplicación web así como atender temas de facturación, utilizando diferentes herramientas como Salesforce, Zuora, Jira, para llegar a una solución que satisfaga a los clientes.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="educacion__contenido">
+            <div class="educacion__contenido-titulo">
+                <h3>Educación</h3>
+            </div>
+            <div class="educacion__contenido-texto">
+                <h3 class="educacion__heading">Universidad Politécnica Internacional</h3>
+                <p class="educacion__descripcion" >Bachillerato en Ingeniería en Sistemas de Información <span class="fecha"> • 2019 - 2023</span></p>
+                <h3 class="educacion__heading">Liceo de Escazú</h3>
+                <p class="educacion__descripcion" >Bachillerato en Educación Media<span class="fecha"> • 2010 - 2015</span></p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="educacion__contenido">
+            <div class="educacion__contenido-titulo">
+                <h3>Certificados</h3>
+            </div>
+            <div class="educacion__contenido-texto">
+                <h3 class="educacion__heading">Javascript Moderno</h3>
+                <p class="educacion__descripcion" >Udemy <span class="fecha"> • 2023</span></p>
+                <h3 class="educacion__heading">CSS Guía Completa</h3>
+                <p class="educacion__descripcion" >Udemy <span class="fecha"> • 2024</span></p>
+                <h3 class="educacion__heading">Scrum Fundamentals</h3>
+                <p class="educacion__descripcion" >SCRUMstudy <span class="fecha"> • 2021</span></p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="educacion__contenido">
+            <div class="educacion__contenido-titulo">
+                <h3>Habilidades</h3>
+            </div>
+            <div class="educacion__contenido-texto">
+                <p class="educacion__descripcion" >Capacidad de creacion de sitios web bajo la filosofía de "Pixel-Perfect", totalmente responsivos, con cierta preferencia de la modalidad "mobile-first", haciendo uso de las tecnologías HTML, CSS, Javascript, SASS, WordPress, aplicando metodologías y herramientas tales como BEM, GULP, NPM, Flexbox, Grid, Vite.., utilizando así, como versionador favorito Github.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="skills__icons">
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-filetype-html"></i>
+                <i class="bi bi-check-all"></i>
+            </div>
+
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-filetype-css"></i>
+                <i class="bi bi-check-all"></i>
+            </div>
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-filetype-scss"></i>
+                <i class="bi bi-check-all"></i>
+            </div>
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-filetype-js"></i>
+                <i class="bi bi-check-all"></i>
+            </div>
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-wordpress"></i>
+                <i class="bi bi-check-all"></i>
+            </div>
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-filetype-jsx"></i>
+                <i class="bi bi-hourglass-split"></i>
+            </div>
+        </div>
+
+        
     </section>
     
 

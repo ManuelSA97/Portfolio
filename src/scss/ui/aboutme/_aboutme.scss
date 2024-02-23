@@ -6,6 +6,13 @@
     color: white;
     font-family: v.$fuentePrincipal;
     padding: 1rem 3rem;
+    text-align: center;
+}
+
+@include m.tablet { 
+    .aboutme{
+        text-align: left;
+    }
 }
 
 .aboutme__grid{
@@ -26,12 +33,26 @@
     display: none;
 }
 
+
+.aboutme__logo--mobile{
+    margin-left: 5rem;
+}
+
+.aboutme__heading-logo{
+    margin-left: 2rem;
+}
+
 @include m.tablet { 
     .aboutme__logo{
         display: block;
         font-size: 15rem;
         margin: 0 auto;
     } 
+    .aboutme__heading-logo{
+        display: none;
+    }
+
+    
 }
 
 .aboutme__cv{
@@ -39,7 +60,7 @@
     align-items: center;
     justify-content:center;
     gap: 2rem;
-    margin: 5rem 0;
+    margin: 5rem auto;
 }
 
 .aboutme__cv-link{
@@ -54,7 +75,6 @@
     background-color: v.$primario;
     overflow: hidden;
     transition: color 0.4s ease-in-out;
-    
 }
 
 .aboutme__cv-link::before{
