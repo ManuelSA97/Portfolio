@@ -27,6 +27,8 @@
     "> 1%"
   ],
   "dependencies": {
+    "basiclightbox": "^5.0.4",
+    "jquery": "^3.7.1",
     "rellax": "^1.12.1"
   }
 }

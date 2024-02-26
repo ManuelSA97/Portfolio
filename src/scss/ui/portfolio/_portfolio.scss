@@ -1,17 +1,12 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
 
-.s-portfolio {
-    background-color: var(--color-gray-1);
-    padding-top: calc(6 * var(--space));
-    padding-bottom: var(--vspace-5);
+.portfolio {
+    background-color: v.$secundario;
+    padding: 5rem 0;
 }
 
-.s-portfolio h3 {
-    margin-top: 0;
-}
-
-.s-portfolio__header {
+.portfolio__header {
     text-align: center;
 }
 
@@ -20,7 +15,14 @@
  * ------------------------------------------------------------------- */
 .folio-list {
     max-width: 1180px;
-    margin-top: var(--vspace-2_5);
+    margin-top: 5rem;
+    @include m.grid(1, 2rem);
+    @include m.tablet { 
+        @include m.grid(2, 3rem);
+    }
+    @include m.desktop { 
+        @include m.grid(3, 2rem);
+    }
 }
 
 .folio-item__thumb {
@@ -51,7 +53,6 @@
 .folio-item__thumb::after {
     z-index: 1;
     content: "...";
-    font-family: var(--font-2);
     font-weight: 300;
     font-size: 3rem;
     color: white;
@@ -73,7 +74,7 @@
     top: 50%;
 }
 
-.folio-item img {
+.folio-item-img {
     display: block;
     margin: 0;
     -webkit-transition: all, .5s;
@@ -94,7 +95,7 @@
     transform: scale(1);
 }
 
-.folio-item:hover .folio-item__thumb img {
+.folio-item:hover .folio-item-img {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
@@ -104,78 +105,58 @@
  * ------------------------------------------------------------------- */
 .modal-popup {
     max-width: 680px;
-    background-color: white;
-    font-size: calc(var(--text-size) * 0.9444);
-    line-height: 1.647;
+    background-color: v.$secundario;
+    font-size: 1.8rem;
+    line-height: 1.6;
     overflow-y: auto;
     position: relative;
 }
 
-.modal-popup img {
-    margin-bottom: var(--vspace-0_5);
+.modal-popup-img {
+    margin-bottom: 5rem;
 }
 
-.modal-popup h5 {
+.modal-popup-titulo {
     margin-top: 0;
 }
 
 .modal-popup__desc {
     padding: 0 4rem 1.2rem;
+    line-height: 1.2;
 }
 
 .modal-popup__cat {
     list-style: none;
     margin-left: 0;
-    font-size: var(--text-sm);
-    line-height: var(--vspace-0_5);
-    color: var(--color-text-light);
-    padding-left: calc(0.875 * var(--space));
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: .5;
+    color: lighten(v.$primario, 30%);
+    padding-left: 3rem;
     position: relative;
 }
 
-.modal-popup__cat::before {
-    content: "";
-    display: block;
-    height: calc(0.625 * var(--space));
-    width: calc(0.625 * var(--space));
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url(../images/icons/icon-tag.svg);
-    position: absolute;
-    left: 0;
-    top: -0.15em;
+.modal-popup-stack {
+    //TODO
 }
 
-.modal-popup__cat li {
-    display: inline;
-    padding-left: 0;
-}
-
-.modal-popup__cat li::after {
-    content: ", ";
-}
-
-.modal-popup__cat li:last-child::after {
-    display: none;
-}
 
 .modal-popup__details {
-    background-color: rgba(0, 0, 0, 0.3);
-    font-size: var(--text-sm);
-    line-height: calc(var(--vspace-1_5) - 2px);
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 1.6rem;
     border: 1px solid rgba(255, 255, 255, 0.15);
     color: white;
-    border-radius: var(--border-radius);
+    border-radius: 1rem;
     padding: 0 1.4rem;
     position: absolute;
-    top: var(--vspace-1_25);
-    left: 4rem;
+    top: 4%;
+    right: 4%;
+    transition-property: background-color;
+    transition-duration: .3s;
 }
 
 .modal-popup__details:hover, 
 .modal-popup__details:focus {
-    background-color: var(--color-1);
-    border-color: var(--color-1);
+    background-color: rgba(0, 5, 5, 0.788);
     color: white;
 }

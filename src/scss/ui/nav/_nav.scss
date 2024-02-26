@@ -125,15 +125,12 @@
     }
 }
 .nav__contenedor.offset {
-    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
-    -webkit-transition: all .5s;
     transition: all .5s;
     
 }
 
 .nav__contenedor.scrolling {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
