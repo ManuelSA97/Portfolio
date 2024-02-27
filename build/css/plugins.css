@@ -38,6 +38,8 @@
     background-repeat: no-repeat;
     cursor: pointer;
     background-color: #d0d2d0;
+    z-index: 1000;
+    border-radius: 50%;
 }
 
 .basicLightbox--visible {

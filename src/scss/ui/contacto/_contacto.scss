@@ -1,0 +1,113 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.contacto{
+    background-color: v.$primario;
+    margin: 0;
+    padding: 5rem 0;
+
+    &__heading{
+        @include m.heading(white);
+    }
+
+    &__contenido{
+        color: white;
+        padding: 3rem;
+        align-items: center;
+        @include m.grid(1, 4rem);
+        @include m.tablet { 
+            @include m.grid(2, 4rem);
+        }
+    }
+
+    &__texto{
+        font-size: 3rem;
+        text-align: center;
+        @include m.tablet { 
+            text-align: left;
+        }
+    }
+
+    &__info{
+        color: darken(white, 40%);
+        font-size: 2.4rem;
+    }
+
+    &__info--mod{
+        color: white;
+    }
+
+    &__info--mod-link{
+        position: relative;	
+        padding: 1.4rem 4.2rem;
+        padding-right: 3.1rem;
+        font-size: 2.4rem;
+        color: white;
+        text-transform: uppercase;
+        transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+        cursor: pointer;
+        user-select: none;
+        
+        @include m.desktop { 
+            position: relative;	
+            padding: 1.4rem 4.2rem;
+            padding-right: 3.1rem;
+            font-size: 2.4rem;
+            color: white;
+            letter-spacing: 1rem;
+            text-transform: uppercase;
+            transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+
+    &__info--mod-link::after,
+    &__info--mod-link::before{
+        content: '';
+        position: absolute;	
+        transition: inherit;
+        z-index: 10;
+
+    }
+
+    &__info--mod-link:hover{
+        color: v.$primario;
+	    transition-delay: .5s;
+        z-index: 100000;
+    }
+
+    &__info--mod-link:hover:before {
+        transition-delay: 0s;
+    }
+
+    &__info--mod-link:hover:after {
+        background-color: v.$secundario;
+        transition-delay: .35s;//10z
+        z-index: -1;
+
+    }
+
+    &__info--mod-link::after,
+    &__info--mod-link::before{
+        top: 0;
+        width: 0;
+        height: 100%;
+    }
+
+    &__info--mod-link::before{
+        left: 0;
+        border: 1px solid lighten(v.$secundario, 100%);
+        border-left: 0;
+        border-right: 0;
+    }
+
+    &__info--mod-link::after{
+        right: 0;
+    }
+
+    &__info--mod-link:hover:before,
+    &__info--mod-link:hover:after {
+	    width: 100%;
+    }
+}

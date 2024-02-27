@@ -48,9 +48,10 @@
     grid-template-columns: repeat($columnas, 1fr);
 }
 
-@mixin heading{
-    text-transform: uppercase;
+@mixin heading($color){
     text-align: center;
-    font-weight: 400;
+    font-weight: 900;
     font-size: 4rem;
+    font-family: v.$fuenteSecundaria;
+    color: $color;
 }

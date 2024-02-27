@@ -47,6 +47,12 @@
     line-height: 1.2;
 }
 
+.educacion__titulo{
+    @include m.heading(v.$primario);
+    margin-bottom: 5rem;
+
+}
+
 .educacion__descripcion{
     margin-top: 0;
     &:last-of-type{

@@ -1,0 +1,27 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.footer{
+    background-color: v.$primario;
+    margin: 0;
+    border-top: 1px solid darken(v.$secundario, 50%);
+
+    &__texto{
+        padding-top: 3rem;
+        text-align: center;
+        color: darken(v.$secundario, 50%);
+        font-size: 1.6rem;
+
+    }
+
+    &__contenido{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 0;
+        @include m.tablet { 
+            flex-direction: row;
+        }
+    }
+}

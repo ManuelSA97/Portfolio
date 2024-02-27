@@ -16,6 +16,11 @@
     }
 }
 
+.aboutme__heading{
+    @include m.heading(white);
+    text-align: left;
+}
+
 .aboutme__grid{
     display: grid;
     align-items: center;

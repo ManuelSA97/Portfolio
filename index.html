@@ -29,7 +29,7 @@
                     <a href="#aboutme" class="nav__link" class="smoothscroll">Sobre mi</a>
                     <a href="#educacion" class="nav__link" class="smoothscroll">Curriculum</a>
                     <a href="#portfolio" class="nav__link" class="smoothscroll">Portfolio</a>
-                    <a href="#" class="nav__link" class="smoothscroll">Contacto</a>
+                    <a href="#contacto" class="nav__link" class="smoothscroll">Contacto</a>
                 </nav>
             </div>
         </div>
@@ -67,6 +67,8 @@
     </section>
 
     <section class="educacion seccion" id="educacion">
+        <h1 class="educacion__titulo">Curriculum</h1>
+        <hr>
         <div class="educacion__contenido">
             <div class="educacion__contenido-titulo">
                 <h3>Experiencia</h3>
@@ -152,13 +154,8 @@
 
 
     <section id="portfolio" class="portfolio seccion contenedor">
-
-        <div class="portfolio__header">
-            <h3>A Few Of My Latest Creations</h3>
-        </div>
-
+            <h3 class="portfolio__heading">Mi Portafolio</h3>
         <div class="folio-list">
-
             <div class="folio-item">
                 <a href="#modal-01" class="folio-item__thumb">
                     <img class="folio-item-img" src="/build/img/tiendaMuebles.avif" alt="">
@@ -243,217 +240,314 @@
 
         <!-- Modal Templates Popup
         =========================================================== -->
-        <div id="modal-01" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" class="modal-popup-img" src="/build/img/tiendaMuebles.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">Droplet</h5>
-                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
-                    <ul class="modal-popup-stack">
-                        <i class="bi bi-tag"></i>
-                        <li>Branding</li>
-                        <li>Product Design</li>
-                    </ul>
+        <div class="modal__contenedor">
+            <div id="modal-01" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" class="modal-popup-img" src="/build/img/tiendaMuebles.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Página web para tienda de muebles</h5>
+                        <p class="modal-popup-texto">La primer página web que cree y subí a la red, en la cual ponia en práctica mis conocimientos en los conceptos de Grid y Flexbox y diseño responsive, cuenta con páginas internas a travez de su barra de navegación superior</p>
+                        <p class="modal-popup-texto">Creada con HTML y CSS "vanilla"</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://tiendamuebles-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Responsive-ECommerce-Grid-Flex">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://tiendamuebles-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-02" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/audifonos.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-02" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/audifonos.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">TechPro</h5>
+                        <p class="modal-popup-texto">Landing Page de un producto ficticio a modo de práctica sobre animaciones y linear-gradients</p>
+                        <p class="modal-popup-texto">Creada con HTML y CSS "vanilla", diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://techpro-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Audifonos-TechPRO-LandingPage">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://techpro-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-03" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/arqBosque.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-03" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/arqBosque.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Arquitectura en el Bosque</h5>
+                        <p class="modal-popup-texto">Landing Page sobre arquitectura en el bosque a modo de practica sobre creación de galerías utilizando Grid y Flexbox</p>
+                        <p class="modal-popup-texto">Creada con HTML y CSS "vanilla", diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://arquitecturabosque-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/ArquitecturaLandingPage">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://arquitecturabosque-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-04" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/nucleus.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-04" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/nucleus.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">eWallet</h5>
+                        <p class="modal-popup-texto">Landing Page de un eWallet a modo de practica de la metodologia de BEM en CSS en la creacion de un diseño</p>
+                        <p class="modal-popup-texto">Creada con HTML y CSS bajo la metodologia de BEM, diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://ewallet-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/eWallet">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://ewallet-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-05" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/cafeteria.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-05" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/cafeteria.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Cafetería</h5>
+                        <p class="modal-popup-texto">Sitio Web de una Cafetería, con páginas internas para ver su menú, información, proceso de creación, galería y reservación.</p>
+                        <p class="modal-popup-texto">Creada con HTML y SCSS, utilizando BEM y GULP, diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://cafeteria-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Cafeteria">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://cafeteria-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-06" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/delivery.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-06" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/delivery.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Delivery App</h5>
+                        <p class="modal-popup-texto">Landing Page de un DeliveryApp</p>
+                        <p class="modal-popup-texto">Creada con HTML y SCSS, utilizando BEM y GULP, diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://appdelivery-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Delivery">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://appdelivery-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-07" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/podcast.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-07" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/podcast.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Podcast</h5>
+                        <p class="modal-popup-texto">Landing Page de un sitio para crear Podcast</p>
+                        <p class="modal-popup-texto">Creada con HTML y SCSS, utilizando GULP, diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://podcast-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Podcast">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://podcast-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-08" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/bnbcopy.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-08" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/bnbcopy.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">AirB&B-Copia</h5>
+                        <p class="modal-popup-texto">Landing Page de una versión antigua del sitio web www.airbnb.com, a modo de practica sobre replicación de diseño</p>
+                        <p class="modal-popup-texto">Creada con HTML y SCSS, utilizando BEM y GULP, diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://bnbcopy-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/bnbcopy">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://bnbcopy-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-09" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/realEstate.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-09" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/realEstate.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Real Estate</h5>
+                        <p class="modal-popup-texto">Landing Page sobre un sitio de Real Estate, utilizando Javascript para efectos de scrolling en las imágene de la galería</p>
+                        <p class="modal-popup-texto">Creada con HTML, SCSS y Javascript, utilizando BEM y GULP, diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                            <i class="bi bi-filetype-js"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://realestate-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Real-Estate">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://realestate-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-10" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/spa.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-10" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/spa.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Salon de Spa</h5>
+                        <p class="modal-popup-texto">Landing Page de un salon de SPA, aplicando el uso de librerías para agregar efectos al "hero" principal</p>
+                        <p class="modal-popup-texto">Creada con HTML, SCSS y Javascript, utilizando BEM, GULP y la librería Swiper, diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                            <i class="bi bi-filetype-js"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://spasalon-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/SPA-Salon">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://spasalon-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-11" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/meeti.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-11" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/meeti.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">MeetUp - Copia</h5>
+                        <p class="modal-popup-texto">Landing Page del sitio www.MeetUp.com, replicando un diseño antiguo a modo de practica</p>
+                        <p class="modal-popup-texto">Creada con HTML y SCSS, utilizando BEM y GULP, diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://meeti-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Meetup-clon">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://meeti-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-12" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/escuelaCocina.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-12" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/escuelaCocina.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Escuela de Cocina</h5>
+                        <p class="modal-popup-texto">Landing Page de una escuela de cocina a modo de practica en los temas Grid Y Flexbox</p>
+                        <p class="modal-popup-texto">Creada con HTML y SCSS, utilizando BEM y GULP, diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://escuelacocina-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/EscuelaCocina">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://escuelacocina-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
+            </div> <!-- end modal -->
 
-        <div id="modal-13" hidden>
-            <div class="modal-popup">
-                <img class="modal-popup-img" src="/build/img/guitarLA.avif" alt="" />
-    
-                <div class="modal-popup__desc">
-                    <h5 class="modal-popup-titulo">The Lamp</h5>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                    <ul class="modal-popup-stack">
-                        <li>Branding</li>
-                    </ul>
+            <div id="modal-13" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/guitarLA.avif" alt="" />
+        
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">GuitarLA</h5>
+                        <p class="modal-popup-texto">Sitio web de una tienda de guitarras ficticia con paginas internas, a modo de práctica en el tema de @keyframes</p>
+                        <p class="modal-popup-texto">Creada con HTML y CSS, utilizando la motodología BEM, diseño 100% responsive</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                        </ul>
+                    </div>
+        
+                    <div class="modal__links">
+                        <a href="https://guitarla-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/GuitarLA">Ver Repositorio <i class="bi bi-github"></i></a>
+                    </div>
                 </div>
-    
-                <a href="https://guitarla-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto</a>
-            </div>
-        </div> <!-- end modal -->
-
+            </div> <!-- end modal -->
+    </div>
     </section>
+
+    <section id="contacto" class="contacto seccion">
+        <h1 class="contacto__heading">Contáctame</h1>
+        <div class="contacto__contenido contenedor">
+            <div>
+                <p class="contacto__texto">Estoy entusiasmado por la oportunidad de ser parte de su equipo y colaborar en el éxito de su próximo proyecto. Mi motivación y experiencia están a su disposición. ¡Espero con ansias la posibilidad de trabajar con ustedes!</p>
+            </div> 
+            <div>
+                <p class="contacto__info"> Email <i class="bi bi-envelope"></i></p>
+                <p class="contacto__info  contacto__info--mod">manuelsandi97@hotmail.com</p>
+                <p class="contacto__info "> Llamar <i class="bi bi-telephone"></i></p>
+                <a class="contacto__info contacto__info--mod-link" href="tel:+50660503979">+506 6050-3979</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__contenido contenedor">
+            <p class="footer__texto"><i class="bi bi-c-circle"></i> Copyright Juan Manuel Sandí Angulo | Diseño inspirado en <span class="bold">StyleShout</span>
+            </p>
+            <div class="nav-sociales">
+                <a class="nav-sociales__icon" href="https://www.linkedin.com/in/manuelsa97/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="nav-sociales__icon" href="https://github.com/ManuelSA97">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </div>
+        
+    </footer>
 
 
     <script src="js/plugins.js"></script>

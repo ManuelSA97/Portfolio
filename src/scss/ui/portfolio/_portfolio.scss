@@ -6,8 +6,8 @@
     padding: 5rem 0;
 }
 
-.portfolio__header {
-    text-align: center;
+.portfolio__heading {
+    @include m.heading(v.$primario);
 }
 
 /* ------------------------------------------------------------------- 
@@ -22,6 +22,34 @@
     }
     @include m.desktop { 
         @include m.grid(3, 2rem);
+    }
+}
+
+.folio-item{
+    height: 13rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 2.6rem -0.8rem v.$primario;
+    border-radius: 1rem;
+    &:nth-child(5){
+        order: -13;
+    }
+    &:nth-child(10){
+        order: -12;
+    }
+    &:nth-child(9){
+        order: -10;
+    }
+    &:nth-child(13){
+        order: -11;
+    }
+    &:nth-child(1){
+        order: -8;
+    }
+    &:nth-child(12){
+        order: -9;
+    }
+    &:nth-child(4){
+        order: 10;
     }
 }
 
@@ -79,6 +107,7 @@
     margin: 0;
     -webkit-transition: all, .5s;
     transition: all, .5s;
+    background-size: cover;
 }
 
 /* on hover
@@ -110,6 +139,7 @@
     line-height: 1.6;
     overflow-y: auto;
     position: relative;
+    border-radius: 2rem;
 }
 
 .modal-popup-img {
@@ -118,6 +148,8 @@
 
 .modal-popup-titulo {
     margin-top: 0;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
 }
 
 .modal-popup__desc {
@@ -136,12 +168,9 @@
     position: relative;
 }
 
-.modal-popup-stack {
-    //TODO
-}
 
-
-.modal-popup__details {
+.modal-popup__details, 
+.modal-popup__details--git{
     background-color: rgba(0, 0, 0, 0.7);
     font-size: 1.6rem;
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -149,10 +178,17 @@
     border-radius: 1rem;
     padding: 0 1.4rem;
     position: absolute;
-    top: 4%;
-    right: 4%;
     transition-property: background-color;
     transition-duration: .3s;
+}
+
+.modal-popup__details{
+    top: 4%;
+    left: 4%;
+}
+.modal-popup__details--git{
+    top: 4%;
+    right: 4%;
 }
 
 .modal-popup__details:hover, 
@@ -160,3 +196,26 @@
     background-color: rgba(0, 5, 5, 0.788);
     color: white;
 }
+
+.modal-popup-titulo{
+    font-family: v.$fuenteSecundaria;
+}
+
+.modal-popup-texto{
+    margin: 0 0 2rem 0;
+    font-size: 1.8rem;
+}
+
+.modal-popup-stack{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.modal__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
