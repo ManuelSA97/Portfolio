@@ -13,7 +13,8 @@
     &__contenido{
         color: white;
         padding: 3rem;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: center;
         @include m.grid(1, 4rem);
         @include m.tablet { 
             @include m.grid(2, 4rem);
