@@ -17,98 +17,35 @@
     &__heading{
         @include m.heading(white);
         text-align: center;
+    }
+    
+    &__grid{
+        display: grid;
+        align-items: center;
         @include m.tablet { 
-            text-align: left;
+            grid-template-columns: 1fr 2fr;
         }
     }
-}
 
-
-
-
-
-.aboutme__grid{
-    display: grid;
-    align-items: center;
-}
-
-
-@include m.tablet { 
-    .aboutme__grid{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-    }
-}
-
-.aboutme__logo{
-    display: none;
-}
-
-
-.aboutme__logo--mobile{
-    margin-left: 5rem;
-}
-
-.aboutme__heading-logo{
-    margin-left: 2rem;
-}
-
-@include m.tablet { 
-    .aboutme__logo{
-        display: block;
-        font-size: 15rem;
-        margin: 0 auto;
-    } 
-    .aboutme__heading-logo{
+    &__logo{
         display: none;
+        &--mobile{
+            margin-left: 5rem;
+        }
+        @include m.tablet { 
+            display: block;
+            font-size: 15rem;
+            margin: 0 auto;
+        }
     }
 
-    
+    &__heading-logo{
+        margin-left: 2rem;
+        @include m.tablet { 
+            display: none;
+        }
+    }
+
 }
 
-.aboutme__cv{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    gap: 2rem;
-    margin: 5rem auto;
-}
 
-.aboutme__cv-link{
-    z-index: 1;
-    position: relative;
-    font-size: inherit;
-    font-family: inherit;
-    color: v.$primario;
-    padding: 0.5em 1em;
-    outline: none;
-    border: 1px solid v.$primario;
-    background-color: white;
-    overflow: hidden;
-    transition: color 0.4s ease-in-out;
-}
-
-.aboutme__cv-link::before{
-    content: '';
-    z-index: -1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    background-color: v.$primario;
-    transform-origin: center;
-    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
-    transition: transform 0.45s ease-in-out;
-}
-
-.aboutme__cv-link:hover{
-    cursor: pointer;
-    color: white;
-}
-
-.aboutme__cv-link:hover::before {
-    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
-}

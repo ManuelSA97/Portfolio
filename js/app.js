@@ -142,46 +142,7 @@ const smoothScroll = function(){
 
 };  // Final ssLightbox
 
-// Traductor 
-//----------------------------------------------------------------
-
-function traducirPagina(idioma) {
-    const apiKey = '9927e3b743e4478c8cbc32761e239af6';
-    const endpoint = 'https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=' + idioma;
-
-    const textos = document.querySelectorAll('[data-translate]');
-    const textosTraducidos = [];
-
-    textos.forEach((elemento) => {
-      textosTraducidos.push(elemento.textContent);
-    });
-
-    const cuerpoTraduccion = {
-      'texts': textosTraducidos
-    };
-
-    fetch(endpoint, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Ocp-Apim-Subscription-Key': apiKey
-      },
-      body: JSON.stringify(cuerpoTraduccion)
-    })
-    .then(response => response.json())
-    .then(data => {
-      textos.forEach((elemento, index) => {
-        elemento.textContent = data[index].translations[0].text;
-      });
-    })
-    .catch((error) => {
-      console.error('Error al traducir:', error);
-    });
-  }
-
-  //Fin traductor
-
-traducirPagina();
 stickyHeader();
 smoothScroll();
 ssLightbox();
+
