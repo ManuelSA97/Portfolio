@@ -102,12 +102,44 @@
                 <h3>Certificados</h3>
             </div>
             <div class="educacion__contenido-texto">
-                <h3 class="educacion__heading">Javascript Moderno</h3>
-                <p class="educacion__descripcion" >Udemy <span class="fecha"> • 2023</span></p>
-                <h3 class="educacion__heading">CSS Guía Completa</h3>
-                <p class="educacion__descripcion" >Udemy <span class="fecha"> • 2024</span></p>
-                <h3 class="educacion__heading">Scrum Fundamentals</h3>
-                <p class="educacion__descripcion" >SCRUMstudy <span class="fecha"> • 2021</span></p>
+                <div class="cert-item">
+                    <h3 class="educacion__heading">Javascript Moderno</h3>
+                    <p class="educacion__descripcion" >Udemy <span class="fecha"> • 2023</span></p>
+                    <a class="cert-link" href="#certificadoJS" >Ver certificado</a>
+                </div>
+                
+                <!-- Modal del certificado JS-->
+                <div id="certificadoJS" hidden class="modal">
+                    <div class="modal-popup">
+                        <img class="cert-popup-img" src="/build/img/Certificado-JS.PNG" alt="" />
+                    </div>
+                </div> <!-- end modal --> 
+
+                <div class="cert-item">
+                    <h3 class="educacion__heading">CSS Guía Completa</h3>
+                    <p class="educacion__descripcion" >Udemy <span class="fecha"> • 2024</span></p>
+                    <a class="cert-link" href="#certificadoCSS" >Ver certificado</a>
+                </div>
+
+                <!-- Modal del certificado CSS-->
+                <div id="certificadoCSS" hidden class="modal">
+                    <div class="modal-popup">
+                        <img class="cert-popup-img" src="/build/img/Certificado-CSS.PNG" alt="" />
+                    </div>
+                </div> <!-- end modal -->
+                
+                <div class="cert-item">
+                    <h3 class="educacion__heading">Scrum Fundamentals</h3>
+                    <p class="educacion__descripcion" >SCRUMstudy <span class="fecha"> • 2021</span></p>
+                    <a class="cert-link" href="#certificadoScrum" >Ver certificado</a>
+                </div>
+
+                <!-- Modal del certificado Scrum-->
+                <div id="certificadoScrum" hidden class="modal">
+                    <div class="modal-popup">
+                        <img class="cert-popup-img" src="/build/img/Certificado-Scrum.PNG" alt="" />
+                    </div>
+                </div> <!-- end modal -->
             </div>
         </div>
         <hr>
@@ -163,8 +195,14 @@
             </div>
         </div>
         <hr>
-        <div class="educacion__cv contenedor">
-            <a class="educacion__cv-link" href="/build/Curriculum IT - En.pdf" download="Curriculum IT - En.pdf">Descargar CV <i class="bi bi-download"></i></a>
+        <div class="educacion__contenido">
+            <div class="educacion__contenido-titulo">
+                <h3>Descargar CV</h3>
+            </div>
+            <div class="educacion__cv">
+                <a class="educacion__cv-link" href="/build/ManuelSandiCV-Es.pdf" download="ManuelSandiCV-Es.pdf">CV Español <i class="bi bi-download"></i></a>
+                <a class="educacion__cv-link" href="/build/ManuelSandiCV-En.pdf" download="ManuelSandiCV-En.pdf">CV Ingles <i class="bi bi-download"></i></a>
+            </div>
         </div>
     </section>
 
@@ -172,6 +210,7 @@
     <section id="portfolio" class="portfolio seccion contenedor">
             <h3 class="portfolio__heading">Mi Portafolio</h3>
         <div class="folio-list">
+
             <div class="folio-item">
                 <a href="#modal-01" class="folio-item__thumb">
                     <img class="folio-item-img" src="/build/img/tiendaMuebles.avif" alt="">
@@ -257,6 +296,7 @@
         <!-- Modal Templates Popup
         =========================================================== -->
         <div class="modal__contenedor">
+
             <div id="modal-01" hidden class="modal">
                 <div class="modal-popup">
                     <img class="modal-popup-img" class="modal-popup-img" src="/build/img/tiendaMuebles.avif" alt="" />
@@ -270,7 +310,6 @@
                             <i class="bi bi-filetype-css"></i>
                         </ul>
                     </div>
-        
                     <div class="modal__links">
                         <a href="https://tiendamuebles-jmsa.netlify.app/" class="modal-popup__details">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
                         <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Responsive-ECommerce-Grid-Flex">Ver Repositorio <i class="bi bi-github"></i></a>

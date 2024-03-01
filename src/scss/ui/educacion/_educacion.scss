@@ -82,13 +82,13 @@
     &__cv{
         display: flex;
         align-items: center;
-        justify-content:center;
+        justify-content:space-between;
         gap: 2rem;
         margin: 5rem auto;
     }
 
     &__cv-link{
-        z-index: 1;
+        z-index: 100;
         position: relative;
         font-size: inherit;
         font-family: inherit;
@@ -125,4 +125,24 @@
         transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
     }
 }
+
+.cert-item{
+    height: 13rem;
+    overflow: hidden;
+    box-shadow: none;
+    border-radius: unset;
+    margin-bottom: 2rem;
+}
+
+.cert-popup-img {
+    margin-bottom: 0;
+}
+
+.cert-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: v.$primario;
+    font-weight: 700;
+}
+
 
