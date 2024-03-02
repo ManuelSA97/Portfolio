@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuel Sandí</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/build/css/plugins.css">
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__imagen" href="#header" class="smoothscroll"></div>
+        <nav>
+            <a class="header__translate" href="index.html">Traducir al Español</a>
+        </nav>
+        <div class="nav__contenedor">
+            <button id="open-icon" class="nav-open-icon">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="nav" id="nav">
+                <button id="close-icon" class="nav-close-icon">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+                <nav class="navbar">
+                    <a href="#header" class="nav__link" class="smoothscroll">Home</a>
+                    <a href="#aboutme" class="nav__link" class="smoothscroll">About Me</a>
+                    <a href="#educacion" class="nav__link" class="smoothscroll">Resume</a>
+                    <a href="#portfolio" class="nav__link" class="smoothscroll">Portfolio</a>
+                    <a href="#contacto" class="nav__link" class="smoothscroll">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+        <div id="hcontenido" class="header__contenido">
+            <div class="header__contenido header__contenedor">
+                <h1 class="header__heading">My name is Manuel Sandí</h1>
+                <p class="header__texto">I am a Systems Engineer, motivated and seeking to expand my experience and knowledge in web development, giving my best in the process.</p>    
+            </div>
+
+            <div class="nav-sociales">
+                <a class="nav-sociales__icon" href="https://www.linkedin.com/in/manuelsa97/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="nav-sociales__icon" href="https://github.com/ManuelSA97">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="aboutme" class="aboutme seccion" >
+        <div class="aboutme__grid contenedor">
+            <div class="aboutme__logo"><i class="bi bi-braces"></i></div>
+            <div class="aboutme__contenido">
+                <h2 class="aboutme__heading">
+                   About me<i class="bi bi-braces aboutme__heading-logo"></i>
+                </h2>
+                <p class="aboutme__texto">I am self-taught, a learning enthusiast, constantly immersed in exploring new technologies, methods, libraries, and tools that could be implemented in future projects.</p>
+                <p class="aboutme__texto">I actively pursue my goal of becoming a Full-Stack developer, although my current focus is on perfecting my skills in the <span class="bold">Front-End</span>. In this regard, I am immersed in obtaining a certificate in ReactJS, demonstrating my commitment to excellence in the development of dynamic and functional interfaces.</p>
+                <p class="aboutme__texto">I meticulously apply the 'Pixel-Perfect' philosophy when implementing designs, ensuring precise and aesthetically polished execution. Additionally, I rigorously adhere to programming best practices. My goal is to create readable, reusable, and easy-to-maintain code, following standards that ensure quality and efficiency in software development.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="educacion seccion" id="educacion">
+        <h1 class="educacion__titulo">Resume</h1>
+        <hr>
+        <div class="educacion__contenido">
+            <div class="educacion__contenido-titulo">
+                <h3>Experience</h3>
+            </div>
+            <div class="educacion__contenido-texto">
+                <h3 class="educacion__heading">Foundever</h3>
+                <p class="educacion__descripcion">Customer Service Representative <span class="fecha"> • December 2022 - December 2023</span></p>
+                <p class="educacion__descripcion">Create records of cases related to providing support for the web application and address billing issues using different tools such as Salesforce, Zuora, Jira, to reach a solution that satisfies customers.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="educacion__contenido">
+            <div class="educacion__contenido-titulo">
+                <h3>Education</h3>
+            </div>
+            <div class="educacion__contenido-texto">
+                <h3 class="educacion__heading">Universidad Politécnica Internacional</h3>
+                <p class="educacion__descripcion">Bachelor's Degree in Information Systems Engineering <span class="fecha"> • 2019 - 2023</span></p>
+                <h3 class="educacion__heading">Liceo de Escazú</h3>
+                <p class="educacion__descripcion">High School Diploma<span class="fecha"> • 2010 - 2015</span></p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="educacion__contenido">
+            <div class="educacion__contenido-titulo">
+                <h3>Certificates</h3>
+                </div>
+                <div class="educacion__contenido-texto">
+                    <div class="cert-item">
+                        <h3 class="educacion__heading">Modern Javascript</h3>
+                        <p class="educacion__descripcion" >Udemy <span class="fecha"> • 2023</span></p>
+                        <a class="cert-link" href="#certificadoJS" >View certificate</a>
+                    </div>
+                    
+                    <!-- Modal del certificado JS-->
+                    <div id="certificadoJS" hidden class="modal">
+                        <div class="modal-popup">
+                            <img class="cert-popup-img" src="/build/img/Certificado-JS.PNG" alt="" />
+                        </div>
+                    </div> <!-- end modal --> 
+    
+                    <div class="cert-item">
+                        <h3 class="educacion__heading">CSS Complete Guide</h3>
+                        <p class="educacion__descripcion" >Udemy <span class="fecha"> • 2024</span></p>
+                        <a class="cert-link" href="#certificadoCSS" >View certificate</a>
+                    </div>
+    
+                    <!-- Modal del certificado CSS-->
+                    <div id="certificadoCSS" hidden class="modal">
+                        <div class="modal-popup">
+                            <img class="cert-popup-img" src="/build/img/Certificado-CSS.PNG" alt="" />
+                        </div>
+                    </div> <!-- end modal -->
+                    
+                    <div class="cert-item">
+                        <h3 class="educacion__heading">Scrum Fundamentals</h3>
+                        <p class="educacion__descripcion" >SCRUMstudy <span class="fecha"> • 2021</span></p>
+                        <a class="cert-link" href="#certificadoScrum" >View certificate</a>
+                    </div>
+    
+                    <!-- Modal del certificado Scrum-->
+                    <div id="certificadoScrum" hidden class="modal">
+                        <div class="modal-popup">
+                            <img class="cert-popup-img" src="/build/img/Certificado-Scrum.PNG" alt="" />
+                        </div>
+                    </div> <!-- end modal -->
+                </div>
+        </div>
+        <hr>
+
+        <div class="educacion__contenido">
+            <div class="educacion__contenido-titulo">
+                <h3>Languages</h3>
+                </div>
+                <div class="educacion__contenido-texto">
+                    <h3 class="educacion__heading">Spanish</h3>
+                    <p class="educacion__descripcion">Native</p>
+                    <h3 class="educacion__heading">English</h3>
+                    <p class="educacion__descripcion">B2+</span></p>
+                </div>
+        </div>
+        <hr>
+
+        <div class="educacion__contenido">
+            <div class="educacion__contenido-titulo">
+                <h3>Skills</h3>
+                </div>
+                <div class="educacion__contenido-texto">
+                    <p class="educacion__descripcion">Ability to create websites under the "Pixel-Perfect" philosophy, fully responsive, with a preference for "mobile-first" method, using technologies such as HTML, CSS, Javascript, SASS, WordPress, applying methodologies and tools like BEM, GULP, NPM, Flexbox, Grid, Vite, and using Github as a favorite code versioning tool.</p>
+                </div>
+        </div>
+        <hr>
+
+        <div class="skills__icons">
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-filetype-html"></i>
+                <i class="bi bi-check-all"></i>
+            </div>
+
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-filetype-css"></i>
+                <i class="bi bi-check-all"></i>
+            </div>
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-filetype-scss"></i>
+                <i class="bi bi-check-all"></i>
+            </div>
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-filetype-js"></i>
+                <i class="bi bi-check-all"></i>
+            </div>
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-wordpress"></i>
+                <i class="bi bi-check-all"></i>
+            </div>
+            <div class="skills__icons-contenedor">
+                <i class="bi bi-filetype-jsx"></i>
+                <i class="bi bi-hourglass-split"></i>
+            </div>
+        </div>
+        <hr>
+        <div class="educacion__contenido">
+            <div class="educacion__contenido-titulo">
+                <h3>Download CV</h3>
+            </div>
+            <div class="educacion__cv">
+                <a class="educacion__cv-link" href="/build/ManuelSandiCV-Es.pdf" download="ManuelSandiCV-Es.pdf">Spanish CV <i class="bi bi-download"></i></a>
+                <a class="educacion__cv-link" href="/build/ManuelSandiCV-En.pdf" download="ManuelSandiCV-En.pdf">English CV <i class="bi bi-download"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio" class="portfolio seccion contenedor">
+            <h3 class="portfolio__heading">My Portfolio</h3>
+        <div class="folio-list">
+
+            <div class="folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/tiendaMuebles.avif" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/audifonos.avif" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+             <div class="folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/arqBosque.avif" alt="">
+                </a>
+            </div> <!--end folio-item -->
+
+            <div class="folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/nucleus.avif" alt="">
+                </a>
+            </div>  <!--end folio-item -->
+
+            <div class="folio-item">
+                <a href="#modal-05" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/cafeteria.avif" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="folio-item">
+                <a href="#modal-06" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/delivery.avif" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="folio-item">
+                <a href="#modal-07" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/podcast.avif" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="folio-item">
+                <a href="#modal-08" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/bnbcopy.avif" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="folio-item">
+                <a href="#modal-09" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/realEstate.avif" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="folio-item">
+                <a href="#modal-10" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/spa.avif" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="folio-item">
+                <a href="#modal-11" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/meeti.avif" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="folio-item">
+                <a href="#modal-12" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/escuelaCocina.avif" alt="">
+                </a>
+            </div><!--end folio-item-->
+
+             <div class="folio-item">
+                <a href="#modal-13" class="folio-item__thumb">
+                    <img class="folio-item-img" src="/build/img/guitarLA.avif" alt="">
+                </a>
+            </div><!--end folio-item -->
+
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Popup
+        =========================================================== -->
+        <div class="modal__contenedor">
+
+            <div id="modal-01" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" class="modal-popup-img" src="/build/img/tiendaMuebles.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Furniture Store Website</h5>
+                        <p class="modal-popup-texto">The first website I created and uploaded to the internet, where I applied my knowledge of Grid, Flexbox, and responsive design. It includes internal pages accessed through its top navigation bar.</p>
+                        <p class="modal-popup-texto">Built with vanilla HTML and CSS.</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://tiendamuebles-jmsa.netlify.app/" class="modal-popup__details">View Project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Responsive-ECommerce-Grid-Flex">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->            
+
+            <div id="modal-02" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/audifonos.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">TechPro</h5>
+                        <p class="modal-popup-texto">Landing Page for a fictional product, serving as a practice for animations and linear-gradients.</p>
+                        <p class="modal-popup-texto">Created with vanilla HTML and CSS, featuring 100% responsive design.</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://techpro-jmsa.netlify.app/" class="modal-popup__details">View Project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Audifonos-TechPRO-LandingPage">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+            
+            <div id="modal-03" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/arqBosque.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Architecture in the Forest</h5>
+                        <p class="modal-popup-texto">Landing Page about architecture in the forest as a practice for creating galleries using Grid and Flexbox.</p>
+                        <p class="modal-popup-texto">Created with vanilla HTML and CSS, featuring 100% responsive design.</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://arquitecturabosque-jmsa.netlify.app/" class="modal-popup__details">View project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/ArquitecturaLandingPage">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+            
+            <div id="modal-04" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/nucleus.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">eWallet</h5>
+                        <p class="modal-popup-texto">Landing Page for an eWallet as a practice of the BEM methodology in CSS for design creation.</p>
+                        <p class="modal-popup-texto">Created with HTML and CSS under the BEM methodology, featuring 100% responsive design.</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://ewallet-jmsa.netlify.app/" class="modal-popup__details">View project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/eWallet">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+            
+            <div id="modal-05" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/cafeteria.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Cafeteria</h5>
+                        <p class="modal-popup-texto">Website for a Cafeteria, with internal pages to view its menu, information, creation process, gallery, and reservation.</p>
+                        <p class="modal-popup-texto">Created with HTML and SCSS, using BEM and GULP, featuring 100% responsive design.</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://cafeteria-jmsa.netlify.app/" class="modal-popup__details">View project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Cafeteria">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+
+            <div id="modal-06" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/delivery.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Delivery App</h5>
+                        <p class="modal-popup-texto">Landing Page for a Delivery App</p>
+                        <p class="modal-popup-texto">Created with HTML and SCSS, using BEM and GULP, featuring 100% responsive design</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://appdelivery-jmsa.netlify.app/" class="modal-popup__details">View project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Delivery">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+    
+            <div id="modal-07" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/podcast.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Podcast</h5>
+                        <p class="modal-popup-texto">Landing Page for a site to create Podcasts</p>
+                        <p class="modal-popup-texto">Created with HTML and SCSS, using GULP, featuring 100% responsive design</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://podcast-jmsa.netlify.app/" class="modal-popup__details">View project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Podcast">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+           
+            <div id="modal-08" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/bnbcopy.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">AirB&B Copy</h5>
+                        <p class="modal-popup-texto">Landing Page for an old version of the website www.airbnb.com, as a practice in replicating design</p>
+                        <p class="modal-popup-texto">Created with HTML and SCSS, using BEM and GULP, featuring 100% responsive design</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://bnbcopy-jmsa.netlify.app/" class="modal-popup__details">View project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/bnbcopy">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+   
+            <div id="modal-09" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/realEstate.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Real Estate</h5>
+                        <p class="modal-popup-texto">Landing Page for a Real Estate site, using Javascript for scrolling effects on the gallery images</p>
+                        <p class="modal-popup-texto">Created with HTML, SCSS, and Javascript, using BEM and GULP, featuring 100% responsive design</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                            <i class="bi bi-filetype-js"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://realestate-jmsa.netlify.app/" class="modal-popup__details">View project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Real-Estate">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+ 
+            <div id="modal-10" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/spa.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Spa Salon</h5>
+                        <p class="modal-popup-texto">Landing Page for a spa salon, applying the use of libraries to add effects to the main "hero"</p>
+                        <p class="modal-popup-texto">Created with HTML, SCSS, and Javascript, using BEM, GULP, and the Swiper library, featuring 100% responsive design</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                            <i class="bi bi-filetype-js"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://spasalon-jmsa.netlify.app/" class="modal-popup__details">View project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/SPA-Salon">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+
+            <div id="modal-11" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/meeti.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">MeetUp - Copy</h5>
+                        <p class="modal-popup-texto">Landing Page for the site www.MeetUp.com, replicating an old design for practice</p>
+                        <p class="modal-popup-texto">Created with HTML and SCSS, using BEM and GULP, featuring 100% responsive design</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://meeti-jmsa.netlify.app/" class="modal-popup__details">View project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/Meetup-clon">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+
+            <div id="modal-12" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/escuelaCocina.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">Cooking School</h5>
+                        <p class="modal-popup-texto">Landing Page for a cooking school as a practice in Grid and Flexbox</p>
+                        <p class="modal-popup-texto">Created with HTML and SCSS, using BEM and GULP, featuring 100% responsive design</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-scss"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://escuelacocina-jmsa.netlify.app/" class="modal-popup__details">View project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/EscuelaCocina">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+            
+            <div id="modal-13" hidden class="modal">
+                <div class="modal-popup">
+                    <img class="modal-popup-img" src="/build/img/guitarLA.avif" alt="" />
+            
+                    <div class="modal-popup__desc">
+                        <h5 class="modal-popup-titulo">GuitarLA</h5>
+                        <p class="modal-popup-texto">Website for a fictional guitar store with internal pages, as a practice in @keyframes</p>
+                        <p class="modal-popup-texto">Created with HTML and CSS, using the BEM methodology, featuring 100% responsive design</p>
+                        <ul class="modal-popup-stack">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                        </ul>
+                    </div>
+            
+                    <div class="modal__links">
+                        <a href="https://guitarla-jmsa.netlify.app/" class="modal-popup__details">View project <i class="bi bi-box-arrow-up-right"></i></a>
+                        <a class="modal-popup__details--git" href="https://github.com/ManuelSA97/GuitarLA">View Repository <i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div> <!-- end modal -->
+            
+    </div>
+    </section>
+
+    <section id="contacto" class="contacto seccion">
+        <h1 class="contacto__heading">Contact Me</h1>
+        <div class="contacto__contenido contenedor">
+            <div>
+                <p class="contacto__texto">My motivation and experience are at your disposal. I would love the opportunity to work with you!</p>
+            </div> 
+            <div>
+                <p class="contacto__info"> Email <i class="bi bi-envelope"></i></p>
+                <p class="contacto__info  contacto__info--mod">manuelsandi97@hotmail.com</p>
+                <p class="contacto__info "> Call <i class="bi bi-telephone"></i></p>
+                <a class="contacto__info contacto__info--mod-link" href="tel:+50660503979">+506 6050-3979</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer__contenido contenedor">
+            <p class="footer__texto"><i class="bi bi-c-circle"></i> Copyright Juan Manuel Sandí Angulo | Design inspired by <span class="bold">StyleShout</span>
+            </p>
+            <div class="nav-sociales">
+                <a class="nav-sociales__icon" href="https://www.linkedin.com/in/manuelsa97/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="nav-sociales__icon" href="https://github.com/ManuelSA97">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="/build/js/plugins.js"></script>
+    <script src="/build/js/all-scripts.min.js"></script>
+</body>
+</html>
