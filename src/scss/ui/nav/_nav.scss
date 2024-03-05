@@ -43,7 +43,8 @@
     &__contenedor.sticky {
         opacity: 0;
         visibility: hidden;
-        background-color: v.$primario;
+        background-color: v.$gris;
+        background-image: linear-gradient(0deg, #737773 0%, #141914 100%);
         position: fixed;
         top: 0;
         left: 0;   
