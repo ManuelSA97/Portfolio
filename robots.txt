@@ -1,6 +1,6 @@
 User-agent: *
-Disallow: /build/ManuelSandiCV-En.pdf
-Disallow: /build/ManuelSandiCV-Es.pdf
+Disallow: /build/CVs/JManuelSandiCV-EN.pdf
+Disallow: /build/CVs/JManuelSandiCV-ES.pdf
 Disallow: /src/
 Disallow: /js/
 Disallow: /node_modules/
